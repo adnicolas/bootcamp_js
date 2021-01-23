@@ -20,6 +20,10 @@ input {
     padding: 16px;
 }
 
+.actions {
+    text-align: center;
+}
+
 .img {
     text-align: center;
     margin: 24px 0 12px 0;
