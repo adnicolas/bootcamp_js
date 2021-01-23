@@ -20,12 +20,15 @@ var selectedHotelData = hotelReviews[selectedHotel];
 selectedHotelData.rating = prompt("Introduzca el nº de estrellas del hotel (de 1 a 5)");
 selectedHotelData.anonymous = confirm("¿Desea que la reseña sea anónima?");
 
+var blackStar = "<span>&#9733;</span>";
+var whiteStar = "<span>&#9734;</span>";
+
 var htmlStars = {
-    "1": "<span>&#9733;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span>",
-    "2": "<span>&#9733;</span><span>&#9733;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span>",
-    "3": "<span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span><span>&#9734;</span>",
-    "4": "<span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>",
-    "5": "<span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>"
+    "1": blackStar+whiteStar+whiteStar+whiteStar+whiteStar,
+    "2": blackStar+blackStar+whiteStar+whiteStar+whiteStar,
+    "3": blackStar+blackStar+blackStar+whiteStar+whiteStar,
+    "4": blackStar+blackStar+blackStar+blackStar+whiteStar,
+    "5": blackStar+blackStar+blackStar+blackStar+blackStar
 }
 
 document.getElementById("name-hotel").innerHTML = selectedHotelData.name;
