@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./site.css">
+    <title>Reservar estancia</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <label for="roomTypes">Seleccione tipo de habitación</label>
+            </div>
+            <div class="column">
+                <select name="roomTypes" id="roomTypes">
+                    <option value="standard">Standard</option>
+                    <option value="junior">Junior Suite</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="spa">Incluir SPA</label>
+            </div>
+            <div class="column">
+                <input type="checkbox" name="spa" id="spa">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="roomOccupancy">Seleccione la ocupación</label>
+            </div>
+            <div class="column">
+                <select name="roomOccupancy" id="roomOccupancy">
+                    <option value="individual">Individual</option>
+                    <option value="doble">Doble</option>
+                    <option value="triple">Triple</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="nights">Número de noches</label>
+            </div>
+            <div class="column">
+                <input type="number" name="nights" id="nights">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="parkingNights">Número de noches de parking</label>
+            </div>
+            <div class="column">
+                <input type="number" name="parkingNights" id="parkingNights">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="resultado" style="font-weight:bold;">Precio total</label>
+            </div>
+            <div class="column">
+                <div id="resultado"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
