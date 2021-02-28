@@ -1,0 +1,26 @@
+
+.row {
+    padding: 0.5rem;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.column {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.total-price-columns,
+.header {
+    font-weight: bold;
+}
+
+.total-price-columns {
+    font-size: larger;
+}
