@@ -1,0 +1,16 @@
+.text-area {
+    width: 50vw;
+    background-color: gainsboro;
+    height: 20vh;
+}
+
+.row, .title {
+    flex-direction: row;
+    padding: 0.5vw;
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    text-shadow: 1px 1px 2px black;
+}
