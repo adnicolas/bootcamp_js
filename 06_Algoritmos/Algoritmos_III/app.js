@@ -80,10 +80,10 @@ dinero.sort(function(a, b){return b-a});
 var printResults = (results) => {
     for (result of results) {
         console.log(result[0].toString() + (result[1] > 2 ? 
-            (result[0] > 1 ? " billetes" : " billete") : 
-            (result[0] > 1 ? " monedas" : " moneda")) + 
-            " de " + result[1].toString() + " euros");
+            " billete" : " moneda") + (result[0] > 1 ? "s" : "") +
+            " de " + result[1].toString() + "€");
     }
+    console.log("\n");
 }
 
 var calculate = () => {
